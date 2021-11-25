@@ -48,24 +48,16 @@ async function service (req, res) {
     let html = `<!DOCTYPE html>
     <html>
       <title>cors-buster</title>
-      <h1>CORS Buster! 👻&#x20E0;</h1>
+      <h1>smartfridge.space cors proxy! 👻</h1>
       <h2>See docs: <a href="https://npmjs.org/package/${pkg.name}">https://npmjs.org/package/${pkg.name}</a></h2>
-      <h2>Authenticity</h2>
-      This is a publicly available service. As such you may wonder if it is safe to trust.
-      You can inspect the source code that this server is running by visiting this page: <a href="/_src">/_src</a>.
-      The deploys are immutable, so you can be sure that the code will never change.
-      <h2>Logging</h2>
-      The cloud hosting provider keeps log of all requests. That log is public and available on this page: <a href="/_logs">/_logs</a>.
-      It records the URL, origin IP, referer, and user-agent. None of the sensitive HTTP headers (including those used for
-      HTTP Basic Auth and HTTP Token auth) are ever logged.
       <h2>Request API</h2>
-      ${process.env.NOW_URL}/domain/path?query
+      cors.smartfridge.space/domain/path?query
       <ul>
         <li>domain - the destination host</li>
         <li>path - the rest of the URL</li>
         <li>query - optional query parameters</li>
       </ul>
-      Example: ${process.env.NOW_URL}/github.com/wmhilton/cors-buster?service=git-upload-pack
+      Example: cors.smartfridge.space/github.com/smartfrigde/cors-buster?service=git-upload-pack
       <h2>Supported Protocols</h2>
       In order to protect users who might send their usernames and passwords through the proxy,
       all requests must be made using HTTPS. Plain old HTTP is insecure and therefore not allowed.
